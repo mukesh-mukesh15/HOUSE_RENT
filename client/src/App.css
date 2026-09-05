@@ -1,0 +1,138 @@
+/* App.css */
+
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 140px 24px 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 24, 33, 0.88), rgba(3, 24, 33, 0.65));
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section .hero-copy {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.03;
+  color: #f8fbff;
+  letter-spacing: -0.04em;
+}
+
+.hero-section p.lead {
+  color: #dbe9ff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .input-group {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.hero-section .form-select,
+.hero-section .btn {
+  min-height: 58px;
+}
+
+.hero-section .btn {
+  border-radius: 0 12px 12px 0;
+}
+
+.services-section,
+.testimonials-section,
+.py-5 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.services-section {
+  background: rgba(6, 33, 43, 0.92);
+}
+
+.services-section .card,
+.property-card,
+.card.h-100,
+.card.p-3.h-100 {
+  border-radius: 24px;
+  background: rgba(12, 34, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services-section .card:hover,
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22);
+}
+
+.property-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.property-card .card-title,
+.property-card .card-text {
+  color: #f7f8fb;
+}
+
+.property-card .text-muted {
+  color: #accbd5 !important;
+}
+
+.hero-section .input-group .form-select,
+.hero-section .input-group button {
+  border-radius: 12px;
+}
+
+.hero-section .input-group .form-select {
+  border-right: none;
+}
+
+.hero-section .input-group .btn {
+  border-radius: 0 12px 12px 0;
+}
+
+.testimonials-section {
+  background: linear-gradient(135deg, rgba(0, 183, 173, 0.16), rgba(7, 54, 60, 0.92));
+}
+
+.testimonials-section .card {
+  border-radius: 24px;
+  background: rgba(9, 35, 44, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer {
+  background: linear-gradient(90deg, rgba(3, 29, 37, 0.95), rgba(0, 183, 173, 0.16));
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 80px 16px 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.8rem;
+  }
+}
