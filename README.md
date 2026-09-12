@@ -1,5 +1,7 @@
 # Venus Property Group 🏡
 
+🌐 **Deployed Link**: [https://amazing-mousse-28e4be.netlify.app/](https://amazing-mousse-28e4be.netlify.app/)
+
 **Venus Property Group** is a full-featured **MERN stack real estate rental application** that allows property owners and agents to manage rental listings and connect with potential tenants.
 
 ## 🔧 Tech Stack
